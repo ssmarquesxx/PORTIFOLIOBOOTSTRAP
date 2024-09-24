@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Desenvolvedor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1 class="display-4 text-center">Bem-vindo ao Meu Portfólio</h1>
+        <nav>
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active rounded-pill" id="sobre-tab" data-toggle="tab" href="#sobre" role="tab" aria-controls="sobre" aria-selected="true">Sobre Mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" id="projetos-tab" data-toggle="tab" href="#projetos" role="tab" aria-controls="projetos" aria-selected="false">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-pill" id="contato-tab" data-toggle="tab" href="#contato" role="tab" aria-controls="contato" aria-selected="false">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div class="tab-content" id="myTabContent">
+            <!-- Seção Sobre Mim -->
+            <div class="tab-pane fade show active" id="sobre" role="tabpanel" aria-labelledby="sobre-tab">
+                <section>
+                    <h2 class="text-center mb-4">Sobre Mim</h2>
+                    <p class="lead text-center mt-3">
+                        Me chamo <strong>Samuel</strong>, sou um desenvolvedor iniciante de 20 anos, atualmente cursando Ciência da Computação.
+                        Desde pequeno, sempre tive uma paixão por tecnologia, o que me levou a explorar diferentes áreas do desenvolvimento de software.
+                    </p>
+                    <p class="text-center">
+                        Ao longo da minha jornada acadêmica, aprendi e trabalhei com diversas linguagens de programação, como <strong>Python</strong>, <strong>JavaScript</strong> e <strong>Java</strong>.
+                        Estou sempre em busca de novos desafios que me permitam aprimorar minhas habilidades e criar soluções inovadoras. Meu objetivo é
+                        construir aplicações que não apenas atendam às necessidades dos usuários, mas que também ofereçam uma experiência excepcional.
+                    </p>
+                    <p class="text-center">
+                        Estou empolgado para aplicar meus conhecimentos em projetos reais e continuo aprendendo e evoluindo na minha carreira,
+                        aberto a colaborações e novas oportunidades. Acredito que a tecnologia pode mudar o mundo, e quero fazer parte dessa transformação.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Seção Projetos -->
+            <div class="tab-pane fade" id="projetos" role="tabpanel" aria-labelledby="projetos-tab">
+                <section>
+                    <h2 class="text-center mb-4">Meus Projetos</h2>
+
+                    <!-- Cartão de Projeto 1 -->
+                    <div class="card mb-4 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title">Projeto 1: Carro Inteligente</h3>
+                            <p class="card-text">
+                                No primeiro semestre da faculdade, desenvolvi um projeto inovador de um carro inteligente, projetado para executar missões de resgate em terrenos difíceis.
+                                Equipado com sensores de som, reconhecimento de terreno, piloto automático e controle remoto, este projeto visava a eficiência em situações críticas.
+                                Foi uma experiência incrível que me ensinou sobre programação em tempo real e integração de hardware.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Cartão de Projeto 2 -->
+                    <div class="card mb-4 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title">Projeto 2: Estufa Autônoma</h3>
+                            <p class="card-text">
+                                No terceiro semestre, desenvolvi um protótipo de estufa autônoma, projetada para monitorar e irrigar plantas de maneira eficiente.
+                                Equipado com sensores de umidade e temperatura, o sistema era capaz de irrigar automaticamente as plantas a cada hora programada,
+                                garantindo o cuidado adequado e sustentável. Este projeto não só me ajudou a aplicar conhecimentos técnicos, mas também me ensinou sobre a importância da agricultura sustentável.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Seção Contato -->
+            <div class="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contato-tab">
+                <section>
+                    <h2 class="text-center mb-4">Contato</h2>
+                    <p class="text-center">Estou sempre aberto a novas oportunidades e colaborações! Você pode me contatar pelo e-mail: <a href="mailto:samue.samuel804@gmail.com">samue.samuel804@gmail.com</a></p>
+                    <p class="text-center">Ou pelo número: <a href="tel:+5519983951006">(19) 98395-1006</a></p>
+                    <p class="text-center">Fique à vontade para me conectar também no LinkedIn: <
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
